@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت حرفه‌ای تمرینی</title>
+
+    <!-- CSS یک‌جا -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        /* هدر */
+        header {
+            background: linear-gradient(to left, #222, #444);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* منو */
+        nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+
+        /* 🔥 Hover منو */
+        nav a:hover {
+            background: #222;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* محتوای اصلی */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* کارت‌ها */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        /* 🔥 Hover کارت */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* فرم */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* 🔥 Hover دکمه */
+        button:hover {
+            background: #555;
+        }
+
+        /* فوتر */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* 📱 موبایل */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>عبدالمتین وب</h1>
+    <p>سایت تمرینی حرفه‌ای</p>
+</header>
+
+<nav>
+    <a href="#">خانه</a>
+    <a href="#">خدمات</a>
+    <a href="#">نمونه‌کار</a>
+    <a href="#">تماس</a>
+</nav>
+
+<main>
+    <section class="card">
+        <h2>درباره ما</h2>
+        <p>ما سایت‌های ساده و ریسپانسیف می‌سازیم.</p>
+    </section>
+
+    <section class="card">
+        <h2>خدمات</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>ریسپانسیف</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>تماس</h2>
+        <form>
+            <input type="text" placeholder="نام">
+            <input type="email" placeholder="ایمیل">
+            <button>ارسال</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 - عبدالمتین</p>
+</footer>
+
+</body>
+</html>
